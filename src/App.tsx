@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <>
-    <ThemeProvider theme={isDark&&darkTheme}>      
+    <ThemeProvider theme={darkTheme}>      
       <CssBaseline />
       <div onClick={()=>{
         setIsDark(!isDark)

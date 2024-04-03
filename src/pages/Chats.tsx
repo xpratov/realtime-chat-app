@@ -56,7 +56,7 @@ const Chats = () => {
 
   const handleChatClick = (e: string) => {
     const chat = e > actualUser ? e + actualUser : actualUser + e;
-    const chatRef = ref(realDB, `chats/${chat}`);
+    const chatRef = ref(realDB, `chats/${e}`);
     onValue(chatRef, (snap) => {
       if (snap.val()) {
         const data = Object.values(snap.val()).sort(

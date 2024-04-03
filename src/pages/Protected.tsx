@@ -8,7 +8,7 @@ const Protected = ({ children }: { children: any }) => {
     auth.authStateReady().finally(() => setLoading(false));
   }, []);
   if (loading) {
-    return <span>We are checking authenfication</span>;
+    return <span>We are checking Authentication</span>;
   } else {
     if (auth.currentUser) {
       return children;

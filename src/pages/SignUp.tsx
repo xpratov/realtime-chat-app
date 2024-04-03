@@ -67,7 +67,7 @@ export default function SignUp() {
         navigate("/");
       })
       .catch(() => {
-        setErrText("hello");
+        setErrText("Something went wrong");
         setWarn(true);
       });
   };
